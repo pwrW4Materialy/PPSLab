@@ -16,7 +16,7 @@ Nf = 2^11;
 v = fft(x,Nf);
 w = abs(v);
 N21 = Nf/2+1; % połowa przedziału 
-f = linspace(0,fp/2,N21);
+f = linspace(0,fp/2,N21); %dzieli na części
 subplot(3,2,2);
 plot(f,w(1:N21)); %wybieramy od 1 do połowy
 xlabel('częst. [Hz]');
@@ -53,11 +53,12 @@ plot(ty,y);
 xlabel('czas [s]');
 ylabel('x(t)');
 
-Nft = 2^11;
-v = fft(y,Nft);
+Nfy = 2^11;
+v = fft(y,Nfy);
 wy = abs(v);
 N21y = Nfy/2+1;
-fy = linespace(0,fp/2,N21y);
+
+fy = linspace(0,fp/2,N21y);
 subplot(3,2,6);
 plot(fy,wy(1,N21y));
 xlabel('częst. [Hz]');

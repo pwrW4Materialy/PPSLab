@@ -1,7 +1,7 @@
 %sin
 fp = 1000;
 N = 2000;
-t = 0 : 1/fp : (N-1)/fp;
+t = 0 : 1/fp : (N-1)/fp; % start : krok : koniec
 
 A = 2;
 f = 2.5;

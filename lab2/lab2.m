@@ -1,5 +1,5 @@
 clear;
-[x,fpx] = wavread('/home/c/mbi04czep.wav');
+[x,fpx] = audioread('mbi04czep.wav');
 
 N = length(x);
 t = 0 : 1/fpx : (N-1)/fpx;
@@ -94,6 +94,7 @@ hist(x,nbins);
 %-policzyć korelację
 %-filtracja, poda m, wyznaczyć próg odcięcia
 %-zrobić histogram
+% decymacje(?)
 
 
 return
